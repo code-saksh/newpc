@@ -1,3 +1,4 @@
 
-a=[i**2 for i in range(1,21) if i%2==0]
+word=input("Enter a word : ")
+a={i for i in word if i in "aeiou"}
 print(a)
