@@ -1,4 +1,4 @@
 
-word=input("Enter a word : ")
-a={i for i in word if i in "aeiou"}
-print(a)
+prices={'pen':10,'book':50,'bag':200}
+for i in prices.items():
+    print(f'{i[0]} costs {i[1]}')
