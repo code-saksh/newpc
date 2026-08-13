@@ -1,16 +1,14 @@
 
 a=int(input("Enter a number : "))
 c=a
-count =0 
-count1=0
+rev=""
 while a>0:
     b=a%10
-    if b%2==0:
-        count= count +1 
-    else: 
-        count1=count1+1
-
+    rev=rev+str(b)
     a=a//10
 
-print("odd digits" , count1)
-print("even digits" , count)
+rev= int (rev)
+if rev==c:
+    print(f"{c} is a Palindrome number ")
+else:
+    print(f"{c} is not a Palindrome number ")
