@@ -1,8 +1,8 @@
 
 a=int(input("Enter a number : "))
-count =0 
+c=a
 while a>0:
-    count=count+1
+    b=a%10
+    print(f'{b} is a digit of {c}')
     a=a//10
     
-print(count)
