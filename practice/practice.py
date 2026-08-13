@@ -1,7 +1,8 @@
 
 a=int(input("Enter a number : "))
-sum=1
-for i in range(1,a+1):
-    sum=sum*i
-
-print(sum)
+count =0 
+while a>0:
+    count=count+1
+    a=a//10
+    
+print(count)
