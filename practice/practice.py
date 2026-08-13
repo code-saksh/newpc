@@ -1,7 +1,7 @@
 
 a=int(input("Enter a number : "))
-sum=0
+sum=1
 for i in range(1,a+1):
-    sum=sum+i
+    sum=sum*i
 
 print(sum)
