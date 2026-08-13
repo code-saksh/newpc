@@ -1,7 +1,7 @@
 
+a=int(input("Enter a number : "))
+sum=0
+for i in range(1,a+1):
+    sum=sum+i
 
-a=50
-b=60
-c=90
-print(max(a,b,c))
-print(min(a,b,c))
+print(sum)
