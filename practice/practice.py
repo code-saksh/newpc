@@ -1,9 +1,14 @@
 a=int(input("Enter a number : "))
-for i in range(2,a+1):
-    count=0
-    for j in range(1,i+1):
-        
-        if i%j==0:
-            count=count+1
-    if count==2:
-        print(i)
+b=a
+c=str(a)
+d=len(c)
+sum=0
+while a>0:
+    e=a%10
+    sum=sum+(e**d)
+    a=a//10
+
+if sum==b:
+    print("Armstrong number")
+else:
+    print("Not an armstrong number")
