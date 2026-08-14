@@ -1,14 +1,10 @@
 a=int(input("Enter a number : "))
-b=a
-c=str(a)
-d=len(c)
 sum=0
-while a>0:
-    e=a%10
-    sum=sum+(e**d)
-    a=a//10
+for i in range(1,a-1):
+    if a%i==0:
+        sum=sum+i
 
-if sum==b:
-    print("Armstrong number")
+if sum==a:
+    print("Perfect number")
 else:
-    print("Not an armstrong number")
+    print("Not a Perfect number")
