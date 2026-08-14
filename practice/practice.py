@@ -1,10 +1,17 @@
-a=int(input("Enter a number : "))
-sum=0
-for i in range(1,a-1):
-    if a%i==0:
-        sum=sum+i
 
-if sum==a:
-    print("Perfect number")
+a=int(input("Enter a number : "))
+b=a
+sum=0
+
+while a>0:
+    sum1=1
+    c=a%10
+    for i in range(1,c+1):
+        sum1=sum1*i
+    sum=sum+sum1
+    a=a//10
+
+if sum==b:
+    print("Strong number")
 else:
-    print("Not a Perfect number")
+    print("Not a Strong number")
