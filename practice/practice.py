@@ -1,10 +1,15 @@
 
 a=int(input("Enter a number : "))
-b=str(a)
-c=len(b)
-d=a*a
-e=10**c
-if d%e==a:
-    print("Automorphic number")
+b=a
+sum=0 
+while a>0:
+    c=a%10 
+    sum=sum+c
+    a=a//10
+
+if b%sum==0:
+    print("Niven number")
 else:
-    print("Not an Automorphic number")
+    print("Not a Niven number")
+
+    
