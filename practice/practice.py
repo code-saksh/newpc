@@ -1,15 +1,9 @@
 
-a=int(input("Enter a number : "))
-b=a
-sum=0 
-while a>0:
-    c=a%10 
-    sum=sum+c
-    a=a//10
+def intro(name, age , education):
+    print("Name" , name)
+    print("Age" , age)
+    print("Education" , education)
 
-if b%sum==0:
-    print("Niven number")
-else:
-    print("Not a Niven number")
+intro("Saksham agarwal" , 18 , "CSE student")
+intro("Sunil kumar" , 50 , "Business")
 
-    
