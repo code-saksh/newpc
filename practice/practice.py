@@ -1,13 +1,13 @@
 
-def biggest(a,b,c):
-    if a>b and a>c:
-        return a 
-    elif b>a and b>c:
-        return b 
-    elif c>a and c>b :
-        return c 
+def grade(marks):
+    if marks >=90:
+        return "A"
+    elif marks >=70:
+        return "B" 
+    elif marks >=50:
+        return "C" 
+    elif marks <50:
+        return "FAIL"
 
-a=int(input("Enter first number:"))
-b=int(input("Enter second number:"))
-c=int(input("Enter third number:"))
-print("The biggest number is:" , biggest(a,b,c))
+a=int(input("Enter marks :"))
+print("Your grade is :" , grade(a))
