@@ -1,9 +1,13 @@
 
-def intro(name, age , education):
-    print("Name" , name)
-    print("Age" , age)
-    print("Education" , education)
+def biggest(a,b,c):
+    if a>b and a>c:
+        return a 
+    elif b>a and b>c:
+        return b 
+    elif c>a and c>b :
+        return c 
 
-intro("Saksham agarwal" , 18 , "CSE student")
-intro("Sunil kumar" , 50 , "Business")
-
+a=int(input("Enter first number:"))
+b=int(input("Enter second number:"))
+c=int(input("Enter third number:"))
+print("The biggest number is:" , biggest(a,b,c))
